@@ -37,7 +37,7 @@ function mostrarEndereco(dados) {
     if (dados.erro) {
         resultado.innerHTML = `<p>CEP não encontrado</p>`;
     } else {
-        enderecoAtual = dados; // Armazena os dados do endereço atual
+        enderecoAtual = dados;
         resultado.innerHTML = `
             <p>Endereço: ${dados.logradouro || ''}</p>
             <p>Complemento: ${dados.complemento || ''}</p>
